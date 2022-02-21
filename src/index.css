@@ -73,7 +73,8 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
 }
 
 .error {
-  padding: 1rem!important;
+  padding: 0.9rem!important;
   text-align: center!important;
   color: #FFF!important;
+  font-weight: 700;
 }
