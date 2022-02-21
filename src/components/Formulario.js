@@ -25,16 +25,6 @@ const Formulario = ({ ciudad, setCiudad, pais, setPais, setConsulta }) => {
         </div>
       )}
       <div className="input-field col s12">
-        <input
-          type="text"
-          name="ciudad"
-          id="ciudad"
-          value={ciudad}
-          onChange={(e) => setCiudad(e.target.value)}
-        />
-        <label htmlFor="ciudad">Ciudad: </label>
-      </div>
-      <div className="input-field col s12">
         <select
           name="pais"
           id="pais"
@@ -53,6 +43,16 @@ const Formulario = ({ ciudad, setCiudad, pais, setPais, setConsulta }) => {
           <option value="EC">Ecuador</option>
         </select>
         <label id="pais">País:</label>
+      </div>
+      <div className="input-field col s12">
+        <input
+          type="text"
+          name="ciudad"
+          id="ciudad"
+          value={ciudad}
+          onChange={(e) => setCiudad(e.target.value)}
+        />
+        <label htmlFor="ciudad">Ciudad: </label>
       </div>
       <div className="input-field col s12">
         <input
