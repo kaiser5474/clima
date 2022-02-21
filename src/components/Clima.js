@@ -1,4 +1,4 @@
-const Clima = ({ clima }) => {
+const Clima = ({ clima, ciudad }) => {
   const {
     temperature,
     humidity,
@@ -12,13 +12,27 @@ const Clima = ({ clima }) => {
 
   return (
     <div className="card-panel white col s12">
-      <img src={imgIcon}></img>
-      <h3>{weather_descriptions}</h3>
-      <div >Temperatura:<span className="temperatura">{temperature}°C</span></div>
-      <div>Humedad Relativa: {humidity}%</div>
-      <div>Presión: {pressure} Pa</div>
+      <div className="textoCiudad">El clima de {ciudad}</div>
+      <div className="encabezado">
+        <img src={imgIcon} />
+        <div>{weather_descriptions}</div>
+      </div>
+
       <div>
-        Vientos: {wind_speed} Km/h {wind_dir}
+        <span className="temperatura">{temperature}°C</span>
+      </div>
+      <div className="textoPropiedades">
+        Humedad Relativa:{" "}
+        <span className="textoValorPropiedades">{humidity}%</span>
+      </div>
+      <div className="textoPropiedades">
+        Presión: <span className="textoValorPropiedades">{pressure} Pa</span>
+      </div>
+      <div className="textoPropiedades ultimaPropiedad">
+        Vientos:{" "}
+        <span className="textoValorPropiedades ">
+          {wind_speed} Km/h {wind_dir}
+        </span>
       </div>
     </div>
   );

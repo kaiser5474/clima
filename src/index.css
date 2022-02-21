@@ -12,25 +12,25 @@ nav .brand-logo {
   color: white;
 }
 
-.input-field input[type=text]:focus + label {
+.input-field input[type="text"]:focus + label {
   color: white;
-} 
+}
 
-.input-field input[type=text]:focus {
+.input-field input[type="text"]:focus {
   border-bottom: 1px solid white;
   box-shadow: 0 1px 0 0 #000;
 }
 
-input[type=text]:not(.browser-default) {
+input[type="text"]:not(.browser-default) {
   border-bottom: 1px solid white;
   color: white;
 }
-input[type=text]:not(.browser-default):focus:not([readonly]) {
+input[type="text"]:not(.browser-default):focus:not([readonly]) {
   border-bottom: 1px solid white;
   -webkit-box-shadow: 0 1px 0 0 white;
   box-shadow: 0 1px 0 0 white;
 }
-input[type=text]:not(.browser-default):focus:not([readonly]) + label {
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
   color: white;
 }
 
@@ -46,35 +46,61 @@ input[type=text]:not(.browser-default):focus:not([readonly]) + label {
   width: 100%;
 }
 .error {
-  padding: 1rem!important;
-  color:white;
+  padding: 1rem !important;
+  color: white;
   margin-top: 3rem;
   text-align: center;
   text-emphasis: left;
 }
+.card-panel {
+  text-align: center;
+  padding-bottom: 2rem;
+}
 .card-panel h2 {
   font-size: 1.6rem;
-  text-align: center;
 }
 .card-panel p {
-  text-align: center;
   font-size: 1.4rem;
 }
 .temperatura {
-  font-size: 4rem!important
+  font-size: 4rem !important;
 }
 .temperatura span {
-  font-size: 2rem!important;
+  font-size: 2rem !important;
   vertical-align: super;
+  text-align: center;
 }
 
 .btn-block {
-  display: block!important;
+  display: block !important;
 }
 
 .error {
-  padding: 0.9rem!important;
-  text-align: center!important;
-  color: #FFF!important;
+  padding: 0.9rem !important;
+  text-align: center !important;
+  color: #fff !important;
   font-weight: 700;
+}
+
+.encabezado {
+  margin-top: 1rem;
+}
+
+.textoCiudad {
+  margin-top: 20px;
+  font-size: x-large;
+  align-items: center;
+  text-align: center;
+}
+
+.textoPropiedades{
+  font-size: large;  
+}
+
+.textoValorPropiedades{
+  font-weight: bold;
+}
+
+.ultimaPropiedad{
+  margin-bottom: 1rem;
 }

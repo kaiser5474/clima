@@ -15,7 +15,7 @@ const Formulario = ({ ciudad, setCiudad, pais, setPais, setConsulta }) => {
     setError(false);
     setTimeout(() => {
       setConsulta(true);
-    }, 2000);
+    }, 500);
   };
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
